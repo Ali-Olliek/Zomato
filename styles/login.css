@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 5px 5px #cf4020;
+    border-radius: 10px;
+}
+
+h1 {
+    position: relative;
+    left: -9rem;
+    margin-bottom: 4rem;
+}
+
+.ele {
+    margin-block: 30px;
+}
+
+.loginfo {
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 1px #888888;
+    padding-inline: 10px;
+    width: 80%;
+}
+
+.btn {
+    height: 40px;
+    width: 160px;
+    background-color: #cf4020;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+p {
+    color: #888888;
+    font-weight: lighter;
+}
