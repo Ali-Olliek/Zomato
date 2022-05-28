@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <title>Login or Sign Up</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Sign Up</h1>
+        <div class="ele">
+            <input type="text" placeholder="Username" class="loginfo username">
+        </div>
+        <div class="ele">
+            <input type="text" placeholder="Email" class="loginfo email">
+        </div>
+        <div class="ele">
+            <input type="text" placeholder="Password" class="loginfo pass">
+        </div>
+        <div class="ele">
+            <br>
+            <input type="date" class="DOB" id="DOB" min="1995-05-27" max="2022-12-31">
+        </div>
+        <div class="ele">
+            <p>Select gender:</p>
+            <ul class="gender">
+                <li>
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Male</label>
+
+                </li>
+                <li>
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Female</label>
+                </li>
+                <li>
+                    <input type="radio" id="other" name="other" value="other">
+                    <label for="other">Other</label>
+                </li>
+            </ul>
+        </div>
+        <button class="btn loginbtn">Sign Up</button>
+        <p>Already have an account? 
+            <a href="../html/login.html">Log in</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
