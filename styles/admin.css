@@ -66,10 +66,28 @@
     height: 50px;
     border-radius: 5px;
     padding: 10px;
+    margin: 5px;
 }
 
 .btn:hover {
     background-color: lightgreen;
+}
+
+.revbtn {
+    width: 20px;
+    height: 20px;
+}
+.delete:hover {
+    background-color: red;
+}
+.accept:hover {
+    background-color: greenyellow;
+}
+
+.reviews {
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
 }
 
 @media screen and (max-width:400px) {

@@ -19,7 +19,7 @@
             <div class="display_users action" id="display_users" tabindex="3">Display Users</div>
             <div class="logout">Log out</div>
         </div>
-        <div class="container">
+        <div class="container" id="upload">
             <h1>Add Restaurant</h1>
             <div class="ele">
                 <input type="text" placeholder="Enter Restaurant's Name" class="Restoname">
@@ -85,6 +85,34 @@
                       </form>
             </div>
             <button class="btn save">Save Changes</button>
+        </div>
+        <div class="container" id="monitor">
+            <h1>Monitor Reviews</h1>
+            <h3>Filter by:</h3>
+            <button class="btn byname">Restaurant's Name</button>
+            <button class="btn bydate">Date Posted</button>
+            <div class="reviews">
+                <ul>
+                    <li id="review">
+                        <p>User review here</p>
+                        <button class="accept revbtn" id="accept">✓</button>
+                        <button class="delete revbtn" id="delete">X</button>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="monitor">
+            <h1>Monitor Reviews</h1>
+            <div class="reviews">
+                <ul>
+                    <li id="review">
+                        <p>Users review here</p>
+                        <button class="accept revbtn" id="accept">✓</button>
+                        <button class="delete revbtn" id="delete">X</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
