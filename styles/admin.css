@@ -22,13 +22,6 @@
     padding-block: 20px;
 }
 
-.container {
-    width: 66vw;
-    height: 100vh;
-    background-color: #868686;
-    border: 5px solid black;
-    row-gap: 10vw;
-}
 
 .action {
     width: 250px;
@@ -42,6 +35,40 @@
 }
 
 .action:focus {
+    background-color: lightgreen;
+}
+
+
+/* -----container----- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 66vw;
+    height: auto;
+    background-color: #868686;
+    border: 5px solid black;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.ele input, select {
+    width: 55vw;
+    height: 50px;
+    border-radius: 5px;
+    margin-block:20px;
+    padding: 10px;
+}
+
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover {
     background-color: lightgreen;
 }
 
@@ -60,3 +87,5 @@
         
     }
 }
+
+

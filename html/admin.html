@@ -20,7 +20,71 @@
             <div class="logout">Log out</div>
         </div>
         <div class="container">
-            
+            <h1>Add Restaurant</h1>
+            <div class="ele">
+                <input type="text" placeholder="Enter Restaurant's Name" class="Restoname">
+            </div>
+            <div class="ele">
+                <input type="text" placeholder="Enter Description" class="loginfo pass">
+            </div>
+            <div class="ele">
+                <form action="location_display" class="locationdropdownlist">
+                    <label for="cuisine">Choose a Location:</label>
+                    <br>
+                    <select name="location" id="locationlist">
+                        <optgroup label="Beirut Governorate">
+                            <option value="Beirut">Beirut</option>
+                        </optgroup>
+                        <optgroup label="Mount Lebanon Governorate">
+                            <option value="Byblos">Byblos</option>
+                            <option value="Keserwan">Keserwan</option>
+                            <option value="Aley">Aley</option>
+                            <option value="Baabda">Baabda</option>
+                            <option value="Chouf">Chouf</option>
+                            <option value="Matn">Matn</option>
+                        </optgroup>
+                        <optgroup label="Nabatieh Governorate">
+                            <option value="Nabatieh">Nabatieh</option>
+                            <option value="Bint Jbeil">Bint Jbeil</option>
+                            <option value="Hasbaya">Hasbaya</option>
+                            <option value="Marjeyoun">Marjeyoun</option>
+                        </optgroup>
+                        <optgroup label="North Governorate">
+                            <option value="Batroun">Batroun</option>
+                            <option value="Bsharri">Bsharri</option>
+                            <option value="Koura">Koura</option>
+                            <option value="Miniyeh">Miniyeh</option>
+                            <option value="Tripoli">Tripoli</option>
+                            <option value="Zgharta">Zgharta</option>
+                        </optgroup>
+                        <optgroup label="South Governorate">
+                            <option value="Sidon">Sidon</option>
+                            <option value="Jezzine">Jezzine</option>
+                            <option value="Tyre">Tyre</option>
+                        </optgroup>
+                        </select>
+            </div>
+            <div class="ele">
+                <form action="cuisine_display" class="cuisinedropdownlist">
+                    <label for="cuisine">Choose a cuisine:</label>
+                    <br>
+                    <select name="cuisine" id="cuisinelist">
+                        <option value="Lebanese">Lebanese</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Italian">Italian</option>
+                        <option value="French">French</option>
+                    </select>
+            </div>
+            <div class="ele">
+                <form action="cuisine_display" class="cuisinedropdownlist">
+                    <label for="cuisine">Upload Menu:</label>
+                    <form action="/action_page.php">
+                        <label for="img"></label>
+                        <input type="file" id="img" name="img" accept="image/*">
+
+                      </form>
+            </div>
+            <button class="btn save">Save Changes</button>
         </div>
     </div>
 </body>
