@@ -24,10 +24,8 @@
     transform: translate(-50%, -50%);
   }
 
-h1 {
-    position: relative;
-    left: -9rem;
-    margin-bottom: 4rem;
+.container > h1 {
+text-align: start;
 }
 
 .ele {
@@ -71,3 +69,12 @@ p {
     box-shadow: 5px 5px #ffc72c;
     text-align: center;
 }
+
+
+@media screen and (max-width:400px){
+    .container {
+        width: 90vw;
+        margin: 0;
+        height: 90vh;
+    }
+
