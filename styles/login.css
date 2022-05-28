@@ -28,7 +28,7 @@ h1 {
 .loginfo {
     height: 40px;
     border-radius: 5px;
-    box-shadow: 2px 1px #888888;
+    box-shadow: 5px 5px #ffc72c;
     padding-inline: 10px;
     width: 80%;
 }
