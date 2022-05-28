@@ -95,11 +95,37 @@ header > .border {
     margin: auto;
 }
 
-.title {
-    
+.filterby {
+    margin: 10px;
+    border: 3px solid black;
+    box-shadow:5px 5px #ffc72c;
+    background-color: white;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+.restolist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px solid black;
+    margin-left: 15px;
+    height: 90%;
+    width: 97%;
+    background-color: #868686;
+    border-radius: 5px;
+}
 
+.restaurant_icon {
+    height: 15vw;
+    width: 30vh;
+    border: 5px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #ffc72c;
+}
 
 
 
@@ -116,5 +142,12 @@ header > .border {
     .filters > form {
         margin-left: 10vw;
         width: 50vw;
+    }
+
+    .restolist {
+        width: 90%;
+    }
+    .container {
+        height: auto;
     }
 }
