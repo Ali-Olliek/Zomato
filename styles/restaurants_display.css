@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.border {
+    background: url(../assets/Generic\ Food\ img\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     width: 100vw;
     height: 100vh;
@@ -45,6 +52,10 @@ header > .border {
 }
 
 .user {
+    background: url(../assets/user_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 75px;
     height: 75px;
     border-radius: 10px;
@@ -121,14 +132,13 @@ header > .border {
 }
 
 .restaurant_icon {
-    height: 15vw;
-    width: 30vh;
+    height: 15vh;
+    width: 30vw;
     border: 5px solid black;
     margin: 20px;
     border-radius: 10px;
     background-color: #ffc72c;
 }
-
 
 
 
