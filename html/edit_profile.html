@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/edit_profile.css">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Edit Your Profile</h3>
+        </div>
+        <hr>
+        <form class="edit-form">
+            <div class="top-div">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+                </div>
+                <div class="pro-pic">
+                    <img src="./../assets/img/default_profile_pic.webp" alt="Profile pic">
+                    <label for="upload-pic">Update Picture</label>
+                    <input type="file" name="upload-pic" id="upload-pic">
+                </div>
+            </div>
+            <div>
+                <label for="bio">Bio:</label><br>
+                <textarea type="text" name="bio" id="bio"></textarea><br>
+            </div>
+            <div class="btn-div">
+         
+            <submit name="submit-btn" id="submit_btn" value="Save" >Save</submit>        
+            </div>
+
+        </form>
+<!---   <hr class="second-hr">
+        <form class="email-form">
+            <label for="email">Email Adress:</label>
+            <input type="email">
+            <label for="password">Password:</label>
+            <input type="password" name="" id="">
+        </form>
+    -->
+    </div>
+</body>
+</html>

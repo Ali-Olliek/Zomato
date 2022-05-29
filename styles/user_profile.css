@@ -1,0 +1,53 @@
+body{
+    background-color: #D8D8D8;
+
+}
+.container{
+    margin: 10%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+.pic-name img{
+    margin-bottom: 10px;
+    flex-grow: 4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #DDD;
+
+}
+
+.pic-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pic-name p{
+    font-size: 26px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding : 0;
+}
+.tabs li{
+    color: #A3A3A3;
+}
+.selected-tab{
+    /* assign to tab selected on click */
+    text-decoration: underline 2px #FFC72C;
+    color: black !important;
+}
+
+hr{
+    border-color: #FFF;
+}
+.my-info,.my-reviews{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    
+}

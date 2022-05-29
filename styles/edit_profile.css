@@ -1,0 +1,81 @@
+body{
+    background-color: #D8D8D8;
+
+}
+.container{
+    margin: 10%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+}
+.top-div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.top-div div{
+    display: flex;
+    flex-direction: column;
+}
+input, .edit-form textarea{
+    margin-bottom: 10px;
+}
+.pro-pic img{
+    margin-bottom: 10px;
+    flex-grow: 4;
+    width: 100px;
+    height: 100px;;
+    border-radius: 50%;
+}
+.pro-pic input{
+    display: none;
+}
+.pro-pic label{
+    background-color: #FFC72C ;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.pro-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-div input{
+    height: 30px;
+    width: 200px;
+    border: 1px solid #A09297;
+
+    border-radius: 5px;
+}
+#submit_btn{
+    background-color: #CF4020;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    width: 100px;
+    text-align: center;
+
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.second-hr{
+    color:#D8D8D8;
+}
