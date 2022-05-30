@@ -7,8 +7,6 @@ document.querySelector('#Reviews').addEventListener('click',function(){
 })
 document.querySelector('#Photos').addEventListener('click',function(){
     selectTab('#Photos');
-
-    
 })
 
 let data = new FormData();
