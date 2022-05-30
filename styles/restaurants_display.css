@@ -132,15 +132,30 @@ header > .border {
 }
 
 .restaurant_icon {
-    height: 15vh;
+    height: 30vh;
     width: 30vw;
     border: 5px solid black;
     margin: 20px;
     border-radius: 10px;
     background-color: #ffc72c;
+    position: relative;
 }
 
+#restaurant_name{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+}
 
+#restaurant_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
