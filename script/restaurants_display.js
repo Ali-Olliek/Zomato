@@ -1,18 +1,27 @@
-
-let data = new FormData();
-data.append('idRestaurants', 1);
 axios({
-    method: 'post',
-    url: 'http://localhost/group_project/php/get_restaurant.php',
-    data: data,
+    method: 'get',
+    url: 'http://localhost/group_project/php/get_restaurants.php',
 })
 .then(function (response) {
-//Resto_Name, Resto_Address,Resto_Acc,Resto_rating,Resto_picture,Resto_menu,Resto_average_cost
-    insertData("resturant_name","Resto_Name",response);
-    insertData("restaurant_description","Resto_Description",response);
-    insertData("restaurant_rating","Resto_rating",response);
-    insertData("overview_content","Resto_Overview",response);
-    insertData("restaurant_address","Resto_Address",response);
+    for(let i = 0; i<response.data.length;i++){
+        //create resturant element having image and name
+        let resto_list = document.getElementById("resto_list");
+        let resto = document.createElement('a');
+        resto.id = response.data[i]["idRestaurants"];
+        resto.href="./../html/restaurant.html?r_id="+resto.id;
+        resto.classList.add("restaurant_icon");
+        let resto_img = document.createElement("img");
+        resto_img.id = "restaurant_img";
+        resto_img.src= response.data[i]["Resto_picture"];
+        let resto_name =document.createElement('p');
+        resto_name.id="resto_name";
+        //add name and rating
+        resto_name.innerText = response.data[i]["Resto_Name"] +" ( " + response.data[i]["Resto_rating"] + " )";
+        resto.appendChild(resto_img);
+        resto.appendChild(resto_name);
+        resto_list.appendChild(resto);
+        
+    }
     
     }
 )
