@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <div class="pic-name">
-            <img src="./../assets/img/default_profile_pic.webp" alt="">
-            <p>Fname Lname</p>
+            <img src="./../assets/img/default_profile_pic.webp" alt="" id="profile_pic">
+            <p id="fname_lname"></p>
             <br>
             <a href="./edit_profile.html">Edit Your Profile</a>
         </div>
@@ -26,23 +26,24 @@
         </ul>
         <hr>
         <div class="my-info">
+            <div class="bio">
+                <h3>Bio</h3>
+            </div>
             <div class="fav-res">
+                <h3>Favorite Resturant</h4>
+            </div>
 
-            </div>
-            <div class="fav-cat">
-                
-            </div>
             <div class="age">
-
+                <h3>Age</h3>
             </div>
             <div class="email">
-
+                <h3>Email</h3>
             </div>
-        </div>
-        <div class="my-reviews">
-            
         </div>
 
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./../script/user_profile.js"></script>
+  
 </body>
 </html>

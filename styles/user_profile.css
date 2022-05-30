@@ -44,8 +44,8 @@ body{
 hr{
     border-color: #FFF;
 }
-.my-info,.my-reviews{
-    display: none;
+.my-info{
+    
     width: 50%;
     margin: 0 auto;
     text-align: center;
