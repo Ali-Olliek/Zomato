@@ -65,24 +65,23 @@ btnsubmit.addEventListener("click", function (event) {
     });
 });
 
-button2.addEventListener("click", function(){
-  axios({
-    method:"GET",
-    url: "http://localhost/group_project/group-project-backend/AdminMonitor.php"
-  })
-  .then(function(response){
-    for (let i = 0; i<response.data.length ;i++){
-      let review_list = document.getElementById("review_list")
-      let review = document.createElement("li");
-      review.classList.add("reviews")
-      review.id = "reviews";
-      review.innerText = response.data[i]["User_review"];
-      review_list.appendChild(review);
-  
-  }
-
-  })
-})
+button2.addEventListener(
+  "click",
+  function () {
+    axios({
+      method: "GET",
+      url: "http://localhost/group_project/group-project-backend/AdminMonitor.php",
+    }).then(function (response) {
+      for (let i = 0; i < response.data.length; i++) {
+        let review_list = document.getElementById("review_list");
+        let review = document.createElement("li");
+        review.classList.add("reviews");
+        review.id = "reviews";
+        review.innerText = response.data[i]["User_review"];
+        review_list.appendChild(review);
+      }
+    });
+  },{ once: true });
 
 button3.addEventListener("click", function(){
   axios({
@@ -113,7 +112,7 @@ button3.addEventListener("click", function(){
       user_list.append(break_line)
     }
   })
-})
+}, {once:true})
 // for(let j=0;j<4;j++){
 //       let attr = document.createElement("div");
 //       user.append(attr);
