@@ -64,9 +64,23 @@ button1.addEventListener("click", function (event) {
     });
 });
 
-let button2 = document.getElementById("3");
+let button2 = document.getElementById("2");
 button2.addEventListener("click", function(){
-    const review = document.getElementById("review").value;
-    let data = new FormData();
-    data.append("review", )
+  axios({
+    method:"GET",
+    url: "http://localhost/group_project/group-project-backend/AdminMonitor.php"
+  })
+  .then(function(response){
+    console.log(response.data)
+    for (let i = 0; i<response.data.length ;i++){
+      let review_list = document.getElementById("review_list")
+      let review = document.createElement("li");
+      review.classList.add("reviews")
+      review.id = "reviews";
+      review.innerText = response.data[i]["User_review"];
+      review_list.appendChild(review);
+  
+  }
+
+  })
 })

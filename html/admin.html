@@ -90,12 +90,9 @@
             <h3>Filter by:</h3>
             <button class="btn byname">Restaurant's Name</button>
             <button class="btn bydate">Date Posted</button>
-            <div class="reviews">
-                <ul>
-                    <li id="review">
-                        <p>User review here</p>
-                        <button class="accept revbtn" id="accept">✓</button>
-                        <button class="delete revbtn" id="delete">X</button>
+                <ul class="reviews" id="review_list">
+                    <li id="reviews">
+
                         <hr>
                     </li>
                 </ul>
@@ -109,7 +106,6 @@
                 <div class="attr DateJoined" id="DateJoined"></div>
                 <div class="attr ReviewsNum" id="ReviewsNum"></div>
             </div>
-        </div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./../script/Admin.js"></script>
