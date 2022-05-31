@@ -25,3 +25,16 @@ axios({
     
     }
 )
+let data1 = new FormData();
+data1.append('idUsers', 4);
+axios({
+    method: 'post',
+    url: 'http://localhost/group_project/php/get_user_pp.php',
+    data: data1,
+
+})
+.then(function (response) {
+    document.querySelector(".user").src=response.data[0]["User_Ppic"];
+    
+    }
+)
