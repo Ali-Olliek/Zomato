@@ -22,9 +22,9 @@
                     <input type="text" name="lName" id="lName">
                 </div>
                 <div class="pro-pic">
-                    <img src="./../assets/img/default_profile_pic.webp" alt="Profile pic">
+                    <img src="./../assets/img/default_profile_pic.webp" alt="Profile pic" id = "p_pic">
                     <label for="upload-pic">Update Picture</label>
-                    <input type="file" name="upload-pic" id="upload-pic">
+                    <input type="file" name="upload-pic" id="upload-pic"  accept=".jpg, .jpeg, .png, .icon, .webp">
                 </div>
             </div>
             <div>
@@ -46,5 +46,7 @@
         </form>
     -->
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./../script/edit_profile.js"></script>
 </body>
 </html>
