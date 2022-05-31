@@ -14,12 +14,13 @@ button.addEventListener("click", function(event){
     data.append('Date_of_birth', DOB);
     data.append('gender',DOB)
 
-    let url = 'http://localhost/Zomato/ZomatoBackEnd/signupP.php'; //specifiy where to go after submitting data?
+    let url = 'http://localhost/Group_Project/php/signupP.php'; //specifiy where to go after submitting data?
     let id = localStorage.getItem("user_id");
     url += "?user_id=" + id;
 
     axios({
         method: 'post',
-        url: url
+        url: url,
+        data :data,
     })
 })
