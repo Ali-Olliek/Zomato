@@ -20,13 +20,15 @@ axios({
         resto.appendChild(resto_img);
         resto.appendChild(resto_name);
         resto_list.appendChild(resto);
+
         
     }
     
     }
 )
 let data1 = new FormData();
-data1.append('idUsers', 4);
+set
+data1.append('idUsers', localStorage.getItem('user_id'));
 axios({
     method: 'post',
     url: 'http://localhost/group_project/php/get_user_pp.php',

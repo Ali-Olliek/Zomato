@@ -8,13 +8,11 @@ document.querySelector('#Reviews').addEventListener('click',function(){
 document.querySelector('#Photos').addEventListener('click',function(){
     selectTab('#Photos');
 })
-
-let data = new FormData();
-data.append('idRestaurants', 1);
+var currentLocation = window.location;
+console.log(currentLocation);
 axios({
-    method: 'post',
-    url: 'http://localhost/group_project/php/get_restaurant.php',
-    data: data,
+    method: 'GET',
+    url: 'http://localhost/group_project/php/get_restaurant.php?idRestaurants='+localStorage.getItem('rest_id'),
 })
 .then(function (response) {
 //Resto_Name, Resto_Address,Resto_Acc,Resto_rating,Resto_picture,Resto_menu,Resto_average_cost
@@ -28,7 +26,7 @@ axios({
 )
 //for user pic
 let data1 = new FormData();
-data1.append('idUsers', 4);
+data1.append('idUsers', localStorage.getItem('user_id'));
 axios({
     method: 'post',
     url: 'http://localhost/group_project/php/get_user_pp.php',
