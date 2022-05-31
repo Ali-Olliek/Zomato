@@ -14,7 +14,7 @@ button.addEventListener("click", function(event){
     data.append('Date_of_birth', DOB);
     data.append('gender',gender)
 
-    let url = 'http://localhost/Group_Project/php/signupP.php'; //specifiy where to go after submitting data?
+    let url = 'http://localhost/Group_Project/group-project-backend/signupP.php'; //specifiy where to go after submitting data?
     let id = localStorage.getItem("user_id");
     url += "?user_id=" + id;
 
@@ -22,5 +22,12 @@ button.addEventListener("click", function(event){
         method: 'post',
         url: url,
         data :data,
+    })
+    .then(function(result){
+        if(result=="success"){
+            window.location.replace("http:/Group_Project/Zomato/html/restaurants_display.html");
+        }else{
+            console.log(result)
+        }
     })
 })

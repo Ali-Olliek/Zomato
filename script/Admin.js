@@ -44,7 +44,7 @@ btnsubmit.addEventListener("click", function (event) {
   data.append("resto_loc", location);
 
 
-  let url = "http://localhost/group_project/php/AdminAddResto.php"; //specifiy where to go after submitting data?
+  let url = "http://localhost/group_project/group-project-backend/AdminAddResto.php"; //specifiy where to go after submitting data?
   let id = localStorage.getItem("idrestaurants");
   url += "?restaurant_id=" + 1;
     axios({

@@ -4,8 +4,6 @@ button.addEventListener("click", function(event){
     event.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("pwd").value;
-    console.log(password, " ", username)
-
 
     let data = new FormData();
     data.append('username', username);
@@ -21,7 +19,7 @@ button.addEventListener("click", function(event){
         data: data,
     })
     .then(function(response){
-        
+
         if (response === "Logged in") {
           console.log("logged in");
           var get_id = response.data[0]
