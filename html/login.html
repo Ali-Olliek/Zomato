@@ -11,16 +11,18 @@
     <div class="container center">
         <h1>Log in</h1>
         <div class="ele">
-            <input type="text" placeholder="Username" class="loginfo username">
+            <input type="text" placeholder="Username" class="loginfo username" id="username">
         </div>
         <div class="ele">
-            <input type="text" placeholder="Password" class="loginfo pass">
+            <input type="text" placeholder="Password" class="loginfo pass" id="pwd">
         </div>
-        <button class="btn loginbtn">Log in</button>
+        <button class="btn loginbtn" id="submit">Log in</button>
         <p>Dont have an account? 
             <a href="signUp.html">Sign Up</a>
         </p>
         
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./../script/login.js"></script>
 </body>
 </html>

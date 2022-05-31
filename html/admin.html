@@ -14,18 +14,18 @@
                 <div class="image"></div>
                 <h2 id="adminname">Admin Name</h2>
             </div>
-            <div class="upload_resto action" id="upload_resto" tabindex="1">Upload a Restaurant</div>
-            <div class="monitor_review action" id="monitor_reviews" tabindex="2">Monitor Reviews</div>
-            <div class="display_users action" id="display_users" tabindex="3">Display Users</div>
+            <div id ="1" class="upload_resto action" id="upload_resto" tabindex="1">Upload a Restaurant</div>
+            <div id ="2" class="monitor_review action" id="monitor_reviews" tabindex="2">Monitor Reviews</div>
+            <div id ="3" class="display_users action" id="display_users" tabindex="3">Display Users</div>
             <div class="logout">Log out</div>
         </div>
         <div class="container" id="upload">
             <h1>Add Restaurant</h1>
             <div class="ele">
-                <input type="text" placeholder="Enter Restaurant's Name" class="Restoname">
+                <input id="resto_name" type="text" placeholder="Enter Restaurant's Name" class="Restoname">
             </div>
             <div class="ele">
-                <input type="text" placeholder="Enter Description" class="loginfo pass">
+                <input id="resto_desc" type="text" placeholder="Enter Description" class="loginfo pass">
             </div>
             <div class="ele">
                 <form action="location_display" class="locationdropdownlist">
@@ -33,34 +33,34 @@
                     <br>
                     <select name="location" id="locationlist">
                         <optgroup label="Beirut Governorate">
-                            <option value="Beirut">Beirut</option>
+                            <option value="1">Beirut</option>
                         </optgroup>
                         <optgroup label="Mount Lebanon Governorate">
-                            <option value="Byblos">Byblos</option>
-                            <option value="Keserwan">Keserwan</option>
-                            <option value="Aley">Aley</option>
-                            <option value="Baabda">Baabda</option>
-                            <option value="Chouf">Chouf</option>
-                            <option value="Matn">Matn</option>
+                            <option value="2">Byblos</option>
+                            <option value="3">Keserwan</option>
+                            <option value="4">Aley</option>
+                            <option value="5">Baabda</option>
+                            <option value="6">Chouf</option>
+                            <option value="7">Matn</option>
                         </optgroup>
                         <optgroup label="Nabatieh Governorate">
-                            <option value="Nabatieh">Nabatieh</option>
-                            <option value="Bint Jbeil">Bint Jbeil</option>
-                            <option value="Hasbaya">Hasbaya</option>
-                            <option value="Marjeyoun">Marjeyoun</option>
+                            <option value="8">Nabatieh</option>
+                            <option value="9 Jbeil">Bint Jbeil</option>
+                            <option value="10">Hasbaya</option>
+                            <option value="11">Marjeyoun</option>
                         </optgroup>
                         <optgroup label="North Governorate">
-                            <option value="Batroun">Batroun</option>
-                            <option value="Bsharri">Bsharri</option>
-                            <option value="Koura">Koura</option>
-                            <option value="Miniyeh">Miniyeh</option>
-                            <option value="Tripoli">Tripoli</option>
-                            <option value="Zgharta">Zgharta</option>
+                            <option value="12">Batroun</option>
+                            <option value="13">Bsharri</option>
+                            <option value="14">Koura</option>
+                            <option value="15">Miniyeh</option>
+                            <option value="16">Tripoli</option>
+                            <option value="17">Zgharta</option>
                         </optgroup>
                         <optgroup label="South Governorate">
-                            <option value="Sidon">Sidon</option>
-                            <option value="Jezzine">Jezzine</option>
-                            <option value="Tyre">Tyre</option>
+                            <option value="18">Sidon</option>
+                            <option value="19">Jezzine</option>
+                            <option value="20">Tyre</option>
                         </optgroup>
                         </select>
             </div>
@@ -69,14 +69,13 @@
                     <label for="cuisine">Choose a cuisine:</label>
                     <br>
                     <select name="cuisine" id="cuisinelist">
-                        <option value="Lebanese">Lebanese</option>
-                        <option value="Mexican">Mexican</option>
-                        <option value="Italian">Italian</option>
-                        <option value="French">French</option>
+                        <option value="1">Lebanese</option>
+                        <option value="2">Mexican</option>
+                        <option value="3">Italian</option>
+                        <option value="4">French</option>
                     </select>
             </div>
             <div class="ele">
-                <form action="cuisine_display" class="cuisinedropdownlist">
                     <label for="cuisine">Upload Menu:</label>
                     <form action="/action_page.php">
                         <label for="img"></label>
@@ -84,7 +83,7 @@
 
                       </form>
             </div>
-            <button class="btn save">Save Changes</button>
+            <button id="submitResto" class="btn save">Save Changes</button>
         </div>
         <div class="container" id="monitor">
             <h1>Monitor Reviews</h1>
@@ -105,12 +104,14 @@
         <div class="container" id="display">
             <h1>Display Users</h1>
             <div class="users_list">
-                <div class="attr id" id="id">1</div>
-                <div class="attr name" id="name">Ahmad</div>
-                <div class="attr DateJoined" id="DateJoined">26/5/2022</div>
-                <div class="attr ReviewsNum" id="ReviewsNum">5</div>
+                <div class="attr id" id="id"></div>
+                <div class="attr name" id="username"></div>
+                <div class="attr DateJoined" id="DateJoined"></div>
+                <div class="attr ReviewsNum" id="ReviewsNum"></div>
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./../script/Admin.js"></script>
 </body>
 </html>

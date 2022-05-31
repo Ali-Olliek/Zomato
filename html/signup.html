@@ -11,41 +11,43 @@
     <div class="container center">
     <h1>Sign Up</h1>
         <div class="ele">
-            <input type="text" placeholder="Username" class="loginfo username">
+            <input id="username" type="text" placeholder="Username" class="loginfo username">
         </div>
         <div class="ele">
-            <input type="text" placeholder="Email" class="loginfo email">
+            <input id="email" type="text" placeholder="Email" class="loginfo email">
         </div>
         <div class="ele">
-            <input type="text" placeholder="Password" class="loginfo pass">
+            <input id="pwd" type="text" placeholder="Password" class="loginfo pass">
         </div>
         <div class="ele">
             <br>
-            <input type="date" class="DOB" id="DOB" min="1995-05-27" max="2022-12-31">
+            <input id="DOB" type="date" class="DOB" id="DOB" min="1995-05-27" max="2022-12-31">
         </div>
-        <div class="ele">
+        <div class="ele" id="gender">
             <p>Select gender:</p>
             <ul class="gender">
                 <li>
-                    <input type="radio" id="male" name="male" value="male">
+                    <input type="radio" id="male" name="male" value="1">
                     <label for="male">Male</label>
 
                 </li>
                 <li>
-                    <input type="radio" id="female" name="female" value="female">
+                    <input type="radio" id="female" name="female" value="2">
                     <label for="female">Female</label>
                 </li>
                 <li>
-                    <input type="radio" id="other" name="other" value="other">
+                    <input type="radio" id="other" name="other" value="3">
                     <label for="other">Other</label>
                 </li>
             </ul>
         </div>
-        <button class="btn loginbtn">Sign Up</button>
+        <button class="btn loginbtn" id="submit">Sign Up</button>
         <p>Already have an account? 
             <a href="../html/login.html">Log in</a>
         </p>
     </div>
 </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./../script/signup.js"></script>
 </body>
 </html>
