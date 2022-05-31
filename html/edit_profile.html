@@ -13,38 +13,44 @@
             <h3>Edit Your Profile</h3>
         </div>
         <hr>
-        <form class="edit-form">
+        <form class="edit-form" onsubmit="update_profile()">
+            <div class="pro-pic">
+                <img src="./../assets/img/default_profile_pic.webp" alt="Profile pic" id = "p_pic">
+                <label for="upload-pic">Update Picture</label>
+                <input type="file" name="upload-pic" id="upload-pic"  accept=".jpg, .jpeg, .png, .icon, .webp">
+            </div>
             <div class="top-div">
+                <div class="names">
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fName" id="fName">
+                    </div>
+                    <div>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName">
+                    </div>
+                </div>
+            
                 <div>
-                    <label for="fname">First Name:</label>
-                    <input type="text" name="fName" id="fName">
-                    <label for="lName">Last Name:</label>
-                    <input type="text" name="lName" id="lName">
+                    <label for="bio">Bio:</label><br>
+                    <textarea type="text" name="bio" id="bio"></textarea><br>
                 </div>
-                <div class="pro-pic">
-                    <img src="./../assets/img/default_profile_pic.webp" alt="Profile pic" id = "p_pic">
-                    <label for="upload-pic">Update Picture</label>
-                    <input type="file" name="upload-pic" id="upload-pic"  accept=".jpg, .jpeg, .png, .icon, .webp">
+                <div>
+                    <label for="email">Email Adress:</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="" id="">
+                </div>
+                <div class="btn-div">
+                    <submit name="submit-btn" id="submit_btn" value="Save" >Save</submit>        
                 </div>
             </div>
-            <div>
-                <label for="bio">Bio:</label><br>
-                <textarea type="text" name="bio" id="bio"></textarea><br>
-            </div>
-            <div class="btn-div">
-         
-            <submit name="submit-btn" id="submit_btn" value="Save" >Save</submit>        
-            </div>
+            
 
+            
         </form>
-<!---   <hr class="second-hr">
-        <form class="email-form">
-            <label for="email">Email Adress:</label>
-            <input type="email">
-            <label for="password">Password:</label>
-            <input type="password" name="" id="">
-        </form>
-    -->
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./../script/edit_profile.js"></script>

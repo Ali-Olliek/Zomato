@@ -5,3 +5,5 @@ input.addEventListener('change',function(){
     const image = document.querySelector('#p_pic');
     image.src = URL.createObjectURL(file1[0]);
 })
+
+document.querySelector('form');
