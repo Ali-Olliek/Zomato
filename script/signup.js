@@ -6,13 +6,13 @@ button.addEventListener("click", function(event){
     const DOB = document.getElementById("DOB").value;
     const gender = document.getElementById("gender").value;
     const email = document.getElementById("email").value;
-
+    console.log(gender)
     let data = new FormData();
     data.append('username', username);
     data.append('User_email', email)
     data.append('User_password', password);
     data.append('Date_of_birth', DOB);
-    data.append('gender',DOB)
+    data.append('gender',gender)
 
     let url = 'http://localhost/Group_Project/php/signupP.php'; //specifiy where to go after submitting data?
     let id = localStorage.getItem("user_id");

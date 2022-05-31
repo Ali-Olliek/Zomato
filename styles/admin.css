@@ -91,6 +91,10 @@
 }
 
 /* --------USERS LIST------- */
+.users {
+    display: flex;
+    flex-direction: column;
+}
 .users_list {
     display: flex;
     border-block: 1px solid black;
@@ -99,6 +103,7 @@
     border: 0px;
 }
 .attr {
+    list-style: none;
     border-left: 1px solid black;
     padding: 5px;
 }

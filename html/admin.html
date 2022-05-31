@@ -97,16 +97,18 @@
                     </li>
                 </ul>
             </div>
-        </div>
         <div class="container" id="display">
             <h1>Display Users</h1>
-            <div class="users_list">
-                <div class="attr id" id="id"></div>
-                <div class="attr name" id="username"></div>
-                <div class="attr DateJoined" id="DateJoined"></div>
-                <div class="attr ReviewsNum" id="ReviewsNum"></div>
-            </div>
+                <ul class="users_list" id="users_list">
+                    <li class="attr id" id="id">id</li>
+                    <li class="attr name" id="username">name</li>
+                    <li class="attr email" id="email">email</li>
+                    <li class="attr DateJoined" id="DateJoined">Date Joined</li>
+                    <li class="attr ReviewsNum" id="ReviewsNum">Number of Reviews</li>
+                </ul>
+        </div>
     </div>
+</div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./../script/Admin.js"></script>
 </body>
